@@ -1,12 +1,11 @@
-import { HomeScreen } from "./src/screens";
-import AppLoading from "expo-app-loading";
 import {
-  useFonts,
   Roboto_400Regular,
   Roboto_500Medium,
   Roboto_700Bold,
+  useFonts,
 } from "@expo-google-fonts/roboto";
-import { StatusBar } from "expo-status-bar";
+import { ActivityIndicator } from "react-native";
+import { HomeScreen } from "./src/screens";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -15,7 +14,7 @@ export default function App() {
     Roboto_700Bold,
   });
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <ActivityIndicator />;
   } else {
     return (
       <>

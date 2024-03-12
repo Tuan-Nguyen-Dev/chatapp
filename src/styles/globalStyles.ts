@@ -15,7 +15,6 @@ export const globalStyles = StyleSheet.create({
     section: {
         marginHorizontal: 16,
         marginBottom: 20,
-        paddingVertical: 30
     },
     row: {
         flexDirection: "row",
@@ -28,5 +27,23 @@ export const globalStyles = StyleSheet.create({
         width: 45,
         height: 45,
         borderRadius: 50
+    },
+    button: {
+        borderRadius: 8,
+        minWidth: 40,
+        height: 40,
+        maxHeight: 40,
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    inputContainer: {
+        borderRadius: 8,
+        minWidth: 40,
+        height: 40,
+        maxHeight: 40,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#00000040",
+        paddingHorizontal: 8
     }
 })
